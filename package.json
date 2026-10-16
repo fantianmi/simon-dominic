@@ -1,0 +1,18 @@
+{
+  "name": "delta-force-havoc-coin-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "三角洲行动 · 哈夫币工具站（比例查询 / 特勤处收益 / 跑刀比例 / 租号信息展示）",
+  "scripts": {
+    "dev:web": "pnpm --filter @df/web dev",
+    "dev:api": "pnpm --filter @df/api start:dev",
+    "build": "pnpm -r build",
+    "db:push": "pnpm --filter @df/api prisma:push",
+    "db:seed": "pnpm --filter @df/api prisma:seed",
+    "db:setup": "pnpm --filter @df/api prisma:generate && pnpm --filter @df/api prisma:push && pnpm --filter @df/api prisma:seed"
+  },
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=18"
+  }
+}

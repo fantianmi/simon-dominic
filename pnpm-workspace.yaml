@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+
+# pnpm 10 默认拦截依赖的安装脚本，这里放行 Prisma 引擎与 esbuild。
+onlyBuiltDependencies:
+  - "@prisma/client"
+  - "@prisma/engines"
+  - prisma
+  - esbuild
